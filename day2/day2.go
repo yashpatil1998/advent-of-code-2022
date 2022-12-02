@@ -4,27 +4,6 @@ import (
 	"strings"
 )
 
-var WinScoreMap = map[string]int{
-	"W": 6,
-	"D": 3,
-	"L": 0,
-}
-
-var RPSMap = map[string]string{
-	"A": "ROCK",
-	"B": "PAPER",
-	"C": "SCISSOR",
-	"X": "ROCK",
-	"Y": "PAPER",
-	"Z": "SCISSOR",
-}
-
-var ActionScoreMap = map[string]int{
-	"ROCK":    1,
-	"PAPER":   2,
-	"SCISSOR": 3,
-}
-
 func Day2LogicPart1() int64 {
 	gamesList := strings.Split(input2, "\n")
 	totalGameScore := int64(0)
@@ -79,4 +58,8 @@ func Day2LogicPart2() int64 {
 		}
 	}
 	return totalGameScore
+}
+
+func Day2Logic() (int64, int64) {
+	return Day2LogicPart1(), Day2LogicPart2()
 }
