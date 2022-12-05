@@ -13,7 +13,7 @@ func calPriority(s string) int {
 	}
 }
 
-func Day3LogicPart1() int {
+func day3LogicPart1() int {
 	inputs := strings.Split(input3, "\n")
 	totalSum := 0
 	for _, entry := range inputs {
@@ -29,7 +29,7 @@ func Day3LogicPart1() int {
 	return totalSum
 }
 
-func Day3LogicPart2() int {
+func day3LogicPart2() int {
 	inputs := strings.Split(input3, "\n")
 	totalSum := 0
 	for i := 0; i < len(inputs); {
@@ -50,5 +50,5 @@ func Day3LogicPart2() int {
 }
 
 func Day3Logic() (int, int) {
-	return Day3LogicPart1(), Day3LogicPart2()
+	return day3LogicPart1(), day3LogicPart2()
 }

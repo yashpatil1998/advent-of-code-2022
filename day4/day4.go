@@ -6,10 +6,10 @@ import (
 )
 
 func Day4Logic() (int, int) {
-	return Day4LogicPart1(), Day4LogicPart2()
+	return day4LogicPart1(), day4LogicPart2()
 }
 
-func Day4LogicPart1() int {
+func day4LogicPart1() int {
 	totalCount := 0
 	inputs := strings.Split(input4, "\n")
 	for _, assignmentPairs := range inputs {
@@ -27,7 +27,7 @@ func Day4LogicPart1() int {
 	return totalCount
 }
 
-func Day4LogicPart2() int {
+func day4LogicPart2() int {
 	totalCount := 0
 	inputs := strings.Split(input4, "\n")
 	for _, assignmentPairs := range inputs {

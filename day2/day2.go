@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-func Day2LogicPart1() int64 {
+func day2LogicPart1() int64 {
 	gamesList := strings.Split(input2, "\n")
 	totalGameScore := int64(0)
 	for _, game := range gamesList {
@@ -32,7 +32,7 @@ func Day2LogicPart1() int64 {
 	return totalGameScore
 }
 
-func Day2LogicPart2() int64 {
+func day2LogicPart2() int64 {
 	gamesList := strings.Split(input2, "\n")
 	totalGameScore := int64(0)
 	for _, game := range gamesList {
@@ -61,5 +61,5 @@ func Day2LogicPart2() int64 {
 }
 
 func Day2Logic() (int64, int64) {
-	return Day2LogicPart1(), Day2LogicPart2()
+	return day2LogicPart1(), day2LogicPart2()
 }
