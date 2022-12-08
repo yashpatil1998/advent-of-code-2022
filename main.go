@@ -7,6 +7,7 @@ import (
 	"AdventOfCode2022/day4"
 	"AdventOfCode2022/day5"
 	"AdventOfCode2022/day6"
+	"AdventOfCode2022/day7"
 	"log"
 )
 
@@ -23,4 +24,6 @@ func main() {
 	log.Printf("day5 part 1 %v part 2 %v", day5p1, day5p2)
 	day6p1, day6p2 := day6.Day6Logic()
 	log.Printf("day6 part 1 %v part 2 %v", day6p1, day6p2)
+	day7p1, day7p2 := day7.Day7Logic()
+	log.Printf("day7 part 1 %v part 2 %v", day7p1, day7p2)
 }
