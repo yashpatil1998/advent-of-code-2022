@@ -121,44 +121,9 @@ func day8Part2Logic() int {
 	var scenicScores []int
 	i, j := 1, 1
 	for i = 1; i < len(input[0])-1; i++ {
-		//sScore := 0
 		for j = 1; j < len(input)-1; j++ {
 			scenicScores = append(scenicScores, calculateTreeScore(i, j, input))
 		}
-		/* {
-			sLeft, sRight, sTop, sBottom := 0, 0, 0, 0
-			maxLeft, maxRight, maxTop, maxBottom := 0, len(input[0])-1, 0, len(input)-1
-			for k := j - 1; k >= maxLeft; k-- {
-				if input[i][j] >= input[i][k] {
-					sLeft++
-				} else {
-					break
-				}
-			}
-			for k := j + 1; k <= maxRight; k++ {
-				if input[i][j] >= input[i][k] {
-					sRight++
-				} else {
-					break
-				}
-			}
-			for k := i - 1; k >= maxTop; k-- {
-				if input[i][j] >= input[k][j] {
-					sTop++
-				} else {
-					break
-				}
-			}
-			for k := i + 1; k <= maxBottom; k++ {
-				if input[i][j] >= input[k][j] {
-					sBottom++
-				} else {
-					break
-				}
-			}
-			sScore = sLeft * sRight * sTop * sBottom
-			scenicScores = append(scenicScores, sScore)
-		}*/
 	}
 	sort.Ints(scenicScores)
 	return scenicScores[len(scenicScores)-1]
